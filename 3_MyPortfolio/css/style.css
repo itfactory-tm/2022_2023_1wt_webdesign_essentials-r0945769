@@ -1,0 +1,683 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #14c871;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3e4450;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+#header {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+}
+
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+#header .logo a {
+  color: #5f687b;
+}
+
+#header .logo img {
+  max-height: 50px;
+}
+
+@media (max-width: 991px) {
+  #header {
+    padding: 12px 0;
+  }
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #6a7489;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #16df7e;
+}
+
+
+
+#hero {
+  width: 100%;
+  height: 80vh;
+  background: #fff;
+  padding-top: 120px;
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #3e4450;
+}
+
+#hero h2 {
+  color: #858ea1;
+  margin: 10px 0 30px 0;
+  font-size: 24px;
+}
+
+#hero .cta-hero {
+  z-index:6;
+}
+
+#hero .btn-bekijk-evenementen {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px 10px 30px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #16df7e;
+  box-shadow: 0 8px 28px rgba(22, 223, 126, 0.45);
+}
+
+#hero .btn-bekijk-evenementen:hover {
+  background: #3e4450;
+  box-shadow: 0 8px 28px rgba(62, 67, 80, 0.41);
+}
+
+@media (max-width: 991px) {
+  #hero {
+    height: 100vh;
+  }
+
+  #hero .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+
+  #hero .hero-img {
+    text-align: center;
+  }
+
+  #hero .hero-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: auto;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #hero .hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+    position: relative;
+    right: -120px;
+    top: -63px;
+    z-index: 5;
+  }
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-no-bottom {
+  padding: 60px 0 0;
+}
+
+.section-no-top-img {
+  padding: 100px 0 0;
+}
+
+.section-bg {
+  background-color: #f9f9fa;
+}
+
+.section-title {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #5f687b;
+  position: relative;
+  z-index: 2;
+}
+
+.section-title span {
+  position: absolute;
+  top: 30px;
+  color: #f0f1f3;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 575px) {
+  .section-title h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .section-title span {
+    font-size: 38px;
+  }
+}
+
+.over-ons .content h3 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #5f687b;
+}
+
+.over-ons .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.over-ons .content ul li {
+  padding-bottom: 10px;
+}
+
+.over-ons .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #16df7e;
+}
+
+.over-ons .content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 575px) {
+  .over-ons {
+    padding: 0;
+  }
+}
+
+.evenementen .icon-box {
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+}
+
+.evenementen .icon-box .icon {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+}
+
+.evenementen .icon-box .icon i {
+  color: #16df7e;
+  font-size: 36px;
+  transition: 0.3s;
+}
+
+.evenementen .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.evenementen .icon-box h4 a {
+  color: #5f687b;
+  transition: ease-in-out 0.3s;
+}
+
+.evenementen .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.evenementen .icon-box:hover {
+  border-color: #eaecef;
+}
+
+.evenementen .icon-box:hover h4 a {
+  color: #16df7e;
+}
+
+
+.evenementen .icon-box .btn-evenement-detail:hover {
+  background: #16df7e;
+  box-shadow: 0 8px 28px rgb(22 223 126 / 45%);
+}
+
+.evenementen .icon-box .btn-evenement-detail {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px 10px 30px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #3e4450;
+  box-shadow: 0 8px 28px rgb(62 67 80 / 41%);
+  margin-top: 15px;
+}
+
+
+.evenementen-details {
+  padding-top: 40px;
+}
+
+.evenementen-details .evenementen-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(95, 104, 123, 0.08);
+}
+
+.evenementen-details .evenementen-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.evenementen-details .evenementen-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.evenementen-details .evenementen-info ul li+li {
+  margin-top: 10px;
+}
+
+.evenementen-details .evenementen-description {
+  padding-top: 30px;
+}
+
+.evenementen-details .evenementen-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.evenementen-details .evenementen-description p {
+  padding: 0;
+}
+
+.team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 30px 20px;
+  background: #fff;
+}
+
+.team .member img {
+  max-width: 100%;
+  margin: 0 0 30px 0;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.team .member p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #aaaaaa;
+}
+
+.team .member .social {
+  margin-top: 15px;
+}
+
+.team .member .social a {
+  color: #919191;
+  transition: 0.3s;
+}
+
+.team .member .social a:hover {
+  color: #16df7e;
+}
+
+.team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.contact .info {
+  border-top: 3px solid #16df7e;
+  border-bottom: 3px solid #16df7e;
+  padding: 30px;
+  width: 100%;
+  background-color: #f9f9fa;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #16df7e;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #5f687b;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #949cac;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background: #16df7e;
+  color: #fff;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #16df7e;
+  color: #fff;
+}
+
+
+.breadcrumbs {
+  padding: 15px 0;
+  background: #f9f9fa;
+  min-height: 40px;
+  margin-top: 112px;
+}
+
+.breadcrumbs h2 {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #778196;
+  content: "/";
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 100px;
+  }
+
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+
+  .breadcrumbs ol {
+    display: block;
+  }
+
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
+
+#footer {
+  background-color: #f3f4f6;
+  color: #5f687b;
+  font-size: 14px;
+  position: relative;
+}
+
+#footer .footer-top {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 80px 0;
+}
+
+#footer .footer-top h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #5f687b;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#footer .footer-top p {
+  font-size: 15px;
+  font-style: italic;
+  margin: 30px 0 0 0;
+  padding: 0;
+}
+
+#footer .footer-top .footer-nieuwsbrief {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+#footer .footer-top .footer-nieuwsbrief form {
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px;
+  text-align: left;
+  border: 1px solid #e4e6ea;
+}
+
+#footer .footer-top .footer-nieuwsbrief form input[type=email] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-top .footer-nieuwsbrief form input[type=submit] {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #16df7e;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-top .footer-nieuwsbrief form input[type=submit]:hover {
+  background: #3e4450;
+}
+
+#footer .footer-top .social-links {
+  margin-top: 30px;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #eaecef;
+  color: #5f687b;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 4px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #16df7e;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-bottom {
+  border-top: 1px solid #d9dce2;
+  z-index: 2;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#footer .copyright {
+  float: left;
+}
+
+@media (max-width: 992px) {
+  #footer .copyright {
+    float: none;
+    -moz-text-align-last: center;
+    text-align-last: center;
+  }
+}
