@@ -380,8 +380,13 @@ section {
   font-size: 15px;
 }
 
-.evenementen-details .evenementen-info ul li+li {
+.evenementen-details .evenementen-info ul li {
   margin-top: 10px;
+}
+
+.evenementen-details .evenementen-info ul li li {
+  margin-left: 10px;
+  list-style-type: square;
 }
 
 .evenementen-details .evenementen-description {
@@ -394,8 +399,18 @@ section {
   margin-bottom: 20px;
 }
 
+.evenementen-details .evenementen-description h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 .evenementen-details .evenementen-description p {
   padding: 0;
+}
+
+.evenementen-details .evenementen-description table.prices {
+  width: 100%;
 }
 
 .team .member {
@@ -454,6 +469,12 @@ section {
   width: 100%;
   background-color: #f9f9fa;
 }
+
+#contact {
+  background: url(/img/404.png);
+  background-size: cover;
+}
+
 
 .contact .info i {
   font-size: 20px;
