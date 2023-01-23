@@ -470,10 +470,6 @@ section {
   background-color: #f9f9fa;
 }
 
-#contact {
-  background: url(/img/404.png);
-  background-size: cover;
-}
 
 
 .contact .info i {
@@ -534,6 +530,13 @@ section {
 .contact .info .phone:hover i {
   background: #16df7e;
   color: #fff;
+}
+
+
+#notfound {
+  background: url(/img/404.png);
+  background-size: cover;
+  height: 50vh;
 }
 
 
